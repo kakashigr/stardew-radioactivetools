@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "H9FjO2vJgbE8ioZzb+E6khtrcTR7r6N/aJXO0DH6sLF7qxVoXRw+WvZas4WU35BPiPPf6Z8LS9vobQjfC5SiiA==",
+  "success": true,
+  "projectFilePath": "/Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/RadioactiveTools.csproj",
+  "expectedPackageFiles": [
+    "/Users/kakashi/.nuget/packages/pathoschild.stardew.modbuildconfig/3.2.2/pathoschild.stardew.modbuildconfig.3.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

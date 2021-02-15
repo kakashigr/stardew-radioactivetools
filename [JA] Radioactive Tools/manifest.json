@@ -1,0 +1,11 @@
+{
+	"Name": "JA pack for Radioactive Tools",
+	"Author": "kakashigr",
+	"Version": "1.2.6",
+	"Description": "Adds new items for Radioactive Tools",
+    	"UniqueID": "kakashigr.JA.RadioactiveTools",
+	"UpdateKeys": [ "Nexus:7630" ],
+	"ContentPackFor": {
+		"UniqueID": "spacechase0.JsonAssets",
+	},
+}
