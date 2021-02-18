@@ -2,6 +2,10 @@ A mod for Stardew Valley that allows for radioactive tool upgrades plus new item
 
 # Changelog
 
+v 1.2.7
+New Radioactive Scythe, more powerful than the golden one. Sold from Krobus, need to have 6 hearts with him and be on year 2+
+Partial Portuguese translation (thanks Ertila)
+
 v 1.2.6
 Fixed Radioactive Tree blooming in summer instead of spring ﻿(thx ﻿﻿Schneitizel﻿ )
 Updated French Translation for new items (thx Schneitizel )
