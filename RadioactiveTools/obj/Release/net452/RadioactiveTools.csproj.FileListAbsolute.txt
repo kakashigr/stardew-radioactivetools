@@ -21,3 +21,11 @@
 /Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/obj/Release/net452/RadioactiveTools.csproj.CoreCompileInputs.cache
 /Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/obj/Release/net452/RadioactiveTools.dll
 /Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/obj/Release/net452/RadioactiveTools.pdb
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/bin/Release/net452/RadioactiveTools.dll
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/bin/Release/net452/RadioactiveTools.pdb
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/obj/Release/net452/RadioactiveTools.csprojAssemblyReference.cache
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/obj/Release/net452/RadioactiveTools.AssemblyInfoInputs.cache
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/obj/Release/net452/RadioactiveTools.AssemblyInfo.cs
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/obj/Release/net452/RadioactiveTools.csproj.CoreCompileInputs.cache
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/obj/Release/net452/RadioactiveTools.dll
+/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/obj/Release/net452/RadioactiveTools.pdb

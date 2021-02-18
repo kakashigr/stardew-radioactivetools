@@ -1,7 +1,7 @@
 {
     "Name": "[PFM] Radioactive Tools",
     "Author": "kakashigr",
-    "Version": "1.2.6",
+    "Version": "1.2.7",
     "Description": "Adds new machines for Radioactive Tools",
     "UniqueID": "kakashigr.PFM.RadioactiveTools",
     "MinimumApiVersion": "3.8.0",

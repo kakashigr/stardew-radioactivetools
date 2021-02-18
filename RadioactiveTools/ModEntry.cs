@@ -14,6 +14,7 @@ namespace RadioactiveTools {
         public static IModHelper ModHelper;
         public static ModConfig Config;
         public static Texture2D ToolsTexture;
+        public static Texture2D WeaponsTexture;
 
         private int colorCycleIndex;
         private readonly List<Color> colors = new List<Color>();
@@ -104,6 +105,14 @@ namespace RadioactiveTools {
             harmony.Patch(
                 original: AccessTools.Method(typeof(FishingRod), nameof(FishingRod.getColor)),
                 prefix: new HarmonyMethod(typeof(RadioactivePatches), nameof(RadioactivePatches.FishrodColor))
+            );
+            harmony.Patch(
+                original: AccessTools.Method(typeof(MeleeWeapon), nameof(MeleeWeapon.isScythe)),
+                prefix: new HarmonyMethod(typeof(RadioactivePatches), nameof(RadioactivePatches.Radioactive_isScythe))
+            );
+            harmony.Patch(
+                original: AccessTools.Method(typeof(Grass), "performToolAction"),
+                postfix: new HarmonyMethod(typeof(RadioactivePatches), nameof(RadioactivePatches.RScythe_performToolAction))
             );
         }
 

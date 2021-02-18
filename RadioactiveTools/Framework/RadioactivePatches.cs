@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.Xna.Framework;
 using Netcode;
@@ -235,6 +236,7 @@ namespace RadioactiveTools.Framework {
             }
             return true;
         }
+
         public static bool FishrodColor(FishingRod __instance, ref Color __result) {
             switch (__instance.UpgradeLevel) {
                 case 0:
@@ -252,13 +254,45 @@ namespace RadioactiveTools.Framework {
             }
         }
 
+        public static bool Radioactive_isScythe(MeleeWeapon __instance, ref bool __result) {
+            if (__instance.BaseName == "Radioactive Scythe") {
+                __result = true;
+                return false;
+            }
+            return true;
+        }
+
+        public static void RScythe_performToolAction(ref Grass __instance, Tool t, Vector2 tileLocation) {
+            
+            if (t != null && t is MeleeWeapon && t.BaseName == "Radioactive Scythe") {
+           
+                int numberOfWeedsToDestroy2 = 4;
+                if ((byte)__instance.grassType.Value == 6 && Game1.random.NextDouble() < 0.3) {
+                    numberOfWeedsToDestroy2 = 0;
+                }
+                __instance.numberOfWeeds.Value = (int)__instance.numberOfWeeds.Value - numberOfWeedsToDestroy2;
+                
+                if ((int)__instance.numberOfWeeds.Value <= 0) {
+                    Random obj = Game1.IsMultiplayer ? Game1.recentMultiplayerRandom : new Random((int)((float)(double)Game1.uniqueIDForThisGame + tileLocation.X * 1000f + tileLocation.Y * 11f));
+                    double chance = 0.90;
+                    if (obj.NextDouble() < chance && (Game1.getLocationFromName("Farm") as Farm).tryToAddHay(1) == 0) {
+                        TemporaryAnimatedSprite tmpSprite = new TemporaryAnimatedSprite("Maps\\springobjects", Game1.getSourceRectForStandardTileSheet(Game1.objectSpriteSheet, 178, 16, 16), 750f, 1, 0, t.getLastFarmerToUse().Position - new Vector2(0f, 128f), flicker: false, flipped: false, t.getLastFarmerToUse().Position.Y / 10000f, 0.005f, Color.White, 4f, -0.005f, 0f, 0f);
+                        tmpSprite.motion.Y = -1f;
+                        tmpSprite.layerDepth = 1f - (float)Game1.random.Next(100) / 10000f;
+                        tmpSprite.delayBeforeAnimationStart = Game1.random.Next(350);
+                        Game1.addHUDMessage(new HUDMessage("Hay", 1, add: true, Color.LightGoldenrodYellow, new SObject(178, 1)));
+                    }
+                }
+            }
+        }
+
         /*
          * Radioactive Ferrtilizer patches 
          */
         //public static void RadioactiveFert_plant(HoeDirt __instance ,ref int index, ref int tileX, ref int tileY, ref Farmer who, ref bool isFertilizer) {
-        
+
         //    Crop crop = new Crop(index, tileX, tileY);
-        
+
         //    if (__instance.fertilizer == 465 || __instance.fertilizer == 466 || who.professions.Contains(5)) {
         //        int num1 = 0;
         //        for (int index1 = 0; index1 < crop.phaseDays.Count - 1; ++index1)
@@ -284,7 +318,7 @@ namespace RadioactiveTools.Framework {
         //            }
         //        }
         //    }
-         
+
         //}
 
 

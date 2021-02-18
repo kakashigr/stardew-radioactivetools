@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/RadioactiveTools.csproj": {}
+    "/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/RadioactiveTools.csproj": {}
   },
   "projects": {
-    "/Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/RadioactiveTools.csproj": {
+    "/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/RadioactiveTools.csproj": {
       "version": "1.7.1",
       "restore": {
-        "projectUniqueName": "/Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/RadioactiveTools.csproj",
+        "projectUniqueName": "/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/RadioactiveTools.csproj",
         "projectName": "RadioactiveTools",
-        "projectPath": "/Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/RadioactiveTools.csproj",
+        "projectPath": "/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/RadioactiveTools.csproj",
         "packagesPath": "/Users/kakashi/.nuget/packages/",
-        "outputPath": "/Users/kakashi/Documents/Work/stardew-dev/src/RadioactiveTools-source/RadioactiveTools/obj/",
+        "outputPath": "/Users/kakashi/Documents/Work/stardew-dev/src/stardew-radioactivetools/RadioactiveTools/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kakashi/.config/NuGet/NuGet.Config"

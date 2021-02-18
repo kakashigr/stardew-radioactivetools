@@ -17,7 +17,8 @@ namespace RadioactiveTools.Framework {
                 || asset.AssetNameEquals("Maos/ObjectInformation")
                 || asset.AssetNameEquals("Data/ObjectInformation")
                 || asset.AssetNameEquals("Data/CraftingRecipes")
-                || asset.AssetNameEquals("TileSheets/tools");
+                || asset.AssetNameEquals("TileSheets/tools")
+                || asset.AssetNameEquals("TileSheets/weapons");
             return canEdit;
         }
         //  "918": "Hyper Speed-Gro/70/-300/Basic -19/Hyper Speed-Gro/Greatly stimulates leaf production. Guaranteed to increase growth rate by at least 33%. Mix into tilled soil.",
@@ -58,8 +59,12 @@ namespace RadioactiveTools.Framework {
                 foreach (string key in newDict.Keys) {
                     asset.AsDictionary<string, string>().Data.Add(key, newDict[key]);
                 }
-            } else if (asset.AssetNameEquals("TileSheets\\tools")) {
+            }
+            else if (asset.AssetNameEquals("TileSheets\\tools")) {
                 asset.AsImage().PatchImage(ModEntry.ToolsTexture, null, null, PatchMode.Overlay);
+            }
+            else if (asset.AssetNameEquals("TileSheets\\weapons")) {
+                //asset.AsImage().PatchImage(ModEntry.WeaponsTexture, null, null, PatchMode.Overlay);
             }
         }
 

@@ -55,7 +55,7 @@ namespace RadioactiveTools.Framework {
                     forSale.Add(tool);
                     stock.Add(tool, new[] { UpgradeCost, 5, 910 });
                 }
-           
+
             }
             else if ( categories.Contains(Object.FishCategory) ) {
                 Farmer who = Game1.player;
