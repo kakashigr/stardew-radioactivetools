@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <AssemblyName>RadioactiveTools</AssemblyName>
@@ -12,14 +12,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.2.2" />
+    <Compile Remove="CustomClasses\**" />
+    <EmbeddedResource Remove="CustomClasses\**" />
+    <None Remove="CustomClasses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="System.Net" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CustomClasses\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
