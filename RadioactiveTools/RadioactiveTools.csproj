@@ -5,21 +5,24 @@
     <RootNamespace>RadioactiveTools</RootNamespace>
     <Version>1.7.1</Version>
     <TargetFramework>net452</TargetFramework>
-    <Platforms>x86</Platforms>
-    <PlatformTarget>x86</PlatformTarget>
+    <Platforms>AnyCPU</Platforms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
 
     <EnableHarmony>true</EnableHarmony>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.2.2" />
+    <Compile Remove="CustomClasses\**" />
+    <EmbeddedResource Remove="CustomClasses\**" />
+    <None Remove="CustomClasses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="System.Net" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CustomClasses\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
